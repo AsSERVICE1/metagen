@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MetaGen Verse</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/main.scss">
+</head>
+
+<body class="bg-back">
+    <section>
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg fixed-sticky">
+                <div class="container-fluid my-2 rel">
+                    <a class="navbar-brand nav-logo col-6 col-md-4 col-lg-3" href="index.html"><img
+                            src="images/Logo.png" width="100%" alt="logo"></a>
+                    <button class="navbar-toggler custom-toggler order-lg-1 order-2" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start text-bg-dark " tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="d-none d-lg-flex justify-content-center">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text active colr px-3" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text colr px-3" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown poss">
+                                    <a class="nav-link nav-text colr px-3 dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <div class="row m-0">
+                                            <div class="col-4 text-center navtex">
+                                                <a
+                                                class=" align-items-center text-decoration-none "
+                                                href="#">
+                                                <img src="images/web-development.png" width="30%" alt="web-icon">
+                                                <div class="ps-2">
+                                                    <h4>Website Development</h4>
+                                                    <p>100% Web Development Service</p>
+                                                </div>
+                                            </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex">
+                                                <a
+                                                class=" align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/website-design.png" width="30%" alt="web-des-icon">
+                                                <div class="ps-2">
+                                                    <h4>Custom Website Design</h4>
+                                                    <p>Inspired Web Solution</p>
+                                                </div>
+                                            </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex">
+                                                <a
+                                                class=" align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/seo.png" width="30%" alt="seo-icon">
+                                                <div class="ps-2">
+                                                    <h4>Search Engine optimization</h4>
+                                                    <p>Rank Your Site</p>
+                                                </div>
+                                            </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex">
+                                                <a
+                                                class=" align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/digital-marketing.png" width="30%" alt="dig-mark-icon">
+                                                <div class="ps-2">
+                                                    <h4>Digital Marketing</h4>
+                                                    <p>Glow your Business online</p>
+                                                </div>
+                                            </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex">
+                                                <a
+                                                class=" align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/branding.png" width="30%" alt="brand-icon">
+                                                <div class="ps-2">
+                                                    <h4>Branding & Strategy</h4>
+                                                    <p>Premium & Unique Branding</p>
+                                                </div>
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Packages</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="offcanvas-body justify-content-lg-start justify-content-xl-center d-block d-lg-none">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text active colr px-3" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text colr px-3" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-text colr px-3 dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none "
+                                                href="#">
+                                                <img src="images/web-development.png" width="30%" alt="web-icon">
+                                                <div class="ps-2">
+                                                    <h4>Website Development</h4>
+                                                    <p>100% Web Development Service</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/website-design.png" width="30%" alt="web-des-icon">
+                                                <div class="ps-2">
+                                                    <h4>Custom Website Design</h4>
+                                                    <p>Inspired Web Solution</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/seo.png" width="30%" alt="seo-icon">
+                                                <div class="ps-2">
+                                                    <h4>Search Engine optimization</h4>
+                                                    <p>Rank Your Site</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/digital-marketing.png" width="30%" alt="dig-mark-icon">
+                                                <div class="ps-2">
+                                                    <h4>Digital Marketing</h4>
+                                                    <p>Glow your Business online</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/branding.png" width="30%" alt="brand-icon">
+                                                <div class="ps-2">
+                                                    <h4>Branding & Strategy</h4>
+                                                    <p>Premium & Unique Branding</p>
+                                                </div>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Packages</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <div class="d-none d-sm-block order-lg-2 order-1">
+
+                        <a href="#" class="btn btn-primary rounded-pill ms-3 text-white ">Contact us</a>
+                    </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="tes-bg">
+        <div class="container">
+            <div class="row justify-content-center text-center tes-sli">
+                <h5 class="text-primary pt-5" data-aos="zoom-in-right">Limited Time Offer</h5>
+                <h2 class="pb-5 text-white" data-aos="zoom-in-left">Complete Branding Solution For You!</h2>
+                <div class="col-12 col-md-8 col-lg-6" style="display: contents;">
+                    <main>
+                        <div class="slider">
+                            <div class="slide-row" id="slide-row">
+                              <div class="slide-col">
+                                    <div class="content">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi illo corrupti voluptate animi, cum non.</p>
+                                        <h2>Harper Bennet</h2>
+                                        <p>Business Owner</p>
+                                    </div>
+                                    <div class="hero">
+                                        <img src="images/1-3.webp" width="100%" height="100%" alt="avatar">
+                                    </div>
+                                </div>
+                    
+                                <div class="slide-col">
+                                    <div class="content">
+                                        <p>Jonathan Koletic is an American internet entrepreneur and media proprietor, and investor. He is the founder of the multi-national technology company Treymont.</p>
+                                        <h2>Jonathan</h2>
+                                        <p>Treymont Inc.</p>
+                                    </div>
+                                    <div class="hero">
+                                        <img src="https://user-images.githubusercontent.com/13468728/234031617-2dfb19ea-01d0-4370-b63b-bb6bdfb4f78e.jpg" alt="avatar">
+                                    </div>
+                                </div>
+                    
+                                <div class="slide-col">
+                                    <div class="content">
+                                        <p>Charlie Green is an European entrepreneur and media consultant, and investor. He is the founder of the Hallmark Inc.</p>
+                                        <h2>Charlie</h2>
+                                        <p>Hallmark Inc.</p>
+                                    </div>
+                                    <div class="hero">
+                                        <img src="https://user-images.githubusercontent.com/13468728/234031646-10533999-39e5-4c7b-ab54-d0299b13ce74.jpg" alt="avatar">
+                                    </div>
+                                </div>
+                              
+                               <div class="slide-col">
+                                    <div class="content">
+                                        <p>Sarah Dam is an American internet entrepreneur and media proprietor, and investor. She is the founder of the multi-national technology company Zara.</p>
+                                        <h2>Sarah</h2>
+                                        <p>Zara Inc.</p>
+                                    </div>
+                                    <div class="hero">
+                                        <img src="https://github.com/ecemgo/ecemgo/assets/13468728/55116c98-5f9a-4b0a-9fdb-4911b52d5ef3" alt="avatar">
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                        
+                        <div class="indicator">
+                            <span class="btn btnn active"></span>
+                            <span class="btn btnn"></span>
+                            <span class="btn btnn"></span>
+                            <span class="btn btnn"></span>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+
+</html>

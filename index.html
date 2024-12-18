@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - MetaGen Verse</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="bg-back">
+    <canvas></canvas>
+
+    <!-- Nav bar -->
+    <section>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-sticky">
+                <div class="container-fluid my-2">
+                    <a class="navbar-brand nav-logo col-6 col-md-4 col-lg-3" href="index.html"><img
+                            src="images/Logo.png" width="100%" alt="logo"></a>
+                    <button class="navbar-toggler custom-toggler order-lg-1 order-2" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start text-bg-dark " tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <!-- for Desktop -->
+                        <div class="d-none d-lg-flex justify-content-center  rel">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text active colr px-3" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text colr px-3" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown poss">
+                                    <a class="nav-link nav-text colr px-3 dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <ul class="dropdown-menu p-3 mt-3">
+                                        <div class="row m-0">
+                                            <div class="col-4 text-center navtex">
+                                                <a class=" align-items-center text-decoration-none " href="#">
+                                                    <img src="images/web-development.png" width="20%" alt="web-icon">
+                                                    <div class="ps-2">
+                                                        <h4>Website Development</h4>
+                                                        <p>100% Web Development Service</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex">
+                                                <a class=" align-items-center text-decoration-none" href="#">
+                                                    <img src="images/website-design.png" width="20%" alt="web-des-icon">
+                                                    <div class="ps-2">
+                                                        <h4>Custom Website Design</h4>
+                                                        <p>Inspired Web Solution</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex">
+                                                <a class=" align-items-center text-decoration-none" href="#">
+                                                    <img src="images/seo.png" width="20%" alt="seo-icon">
+                                                    <div class="ps-2">
+                                                        <h4>Search Engine optimization</h4>
+                                                        <p>Rank Your Site</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex">
+                                                <a class=" align-items-center text-decoration-none" href="#">
+                                                    <img src="images/digital-marketing.png" width="20%"
+                                                        alt="dig-mark-icon">
+                                                    <div class="ps-2">
+                                                        <h4>Digital Marketing</h4>
+                                                        <p>Glow your Business online</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex">
+                                                <a class=" align-items-center text-decoration-none" href="#">
+                                                    <img src="images/branding.png" width="20%" alt="brand-icon">
+                                                    <div class="ps-2">
+                                                        <h4>Branding & Strategy</h4>
+                                                        <p>Premium & Unique Branding</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-4  text-center navtex"><a
+                                                    class=" align-items-center text-decoration-none" href="#">
+                                                    <img src="images/wordpress.png" width="20%" alt="wordpress-icon">
+                                                    <div class="ps-2">
+                                                        <h4>Wordpress Designing</h4>
+                                                        <p>Inspired Web Solution</p>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Packages</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- for Mobile -->
+                        <div
+                            class="offcanvas-body justify-content-lg-start justify-content-xl-center d-block d-lg-none">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text active colr px-3" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-text colr px-3" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-text colr px-3 dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none "
+                                                href="#">
+                                                <img src="images/web-development.png" width="30%" alt="web-icon">
+                                                <div class="ps-2">
+                                                    <h4>Website Development</h4>
+                                                    <p>100% Web Development Service</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/website-design.png" width="30%" alt="web-des-icon">
+                                                <div class="ps-2">
+                                                    <h4>Custom Website Design</h4>
+                                                    <p>Inspired Web Solution</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/seo.png" width="30%" alt="seo-icon">
+                                                <div class="ps-2">
+                                                    <h4>Search Engine optimization</h4>
+                                                    <p>Rank Your Site</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/digital-marketing.png" width="30%" alt="dig-mark-icon">
+                                                <div class="ps-2">
+                                                    <h4>Digital Marketing</h4>
+                                                    <p>Glow your Business online</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/branding.png" width="30%" alt="brand-icon">
+                                                <div class="ps-2">
+                                                    <h4>Branding & Strategy</h4>
+                                                    <p>Premium & Unique Branding</p>
+                                                </div>
+                                            </a></li>
+                                        <li class="dropdown-item text-center"><a
+                                                class=" d-lg-inline-flex align-items-center text-decoration-none"
+                                                href="#">
+                                                <img src="images/wordpress.png" width="30%" alt="wordpress-icon">
+                                                <div class="ps-2">
+                                                    <h4>Wordpress Designing</h4>
+                                                    <p>Inspired Web Solution</p>
+                                                </div>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Packages</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-text colr px-3" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <div class="d-none d-sm-block order-lg-2 order-1">
+
+                        <a href="#" class="btn btn-primary rounded-pill ms-3 text-white ">Contact us</a>
+                    </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- row 1 -->
+    <section class="bgg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 ">
+                    <img src="images/hero.webp" data-aos="fade-down" width="100%" alt="hero">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2 data-aos="fade-up">Digital Marketing Agency</h2>
+                    <p data-aos="fade-up">We offer a strong enthusiasm for innovative solutions to each one of our clients, and we deliver
+                        on that promise.</p>
+                    <a href="#" class="btn btn-primary rounded-pill text-white " data-aos="fade-up">Contact us</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- row2 -->
+
+    <section class="py-5">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-5 col-xl-3 mt-3" data-aos="fade-right">
+                    <div class="text-center">
+                        <img src="images/icon1.webp" width="80px" class=" bg-secondary p-2 rounded-circle border-1"
+                            alt="icon">
+                    </div>
+                    <div class="bg-primary px-4 py-5 text-center cardddd">
+                        <h4>Web Design & Development</h4>
+                        <p>Our team offers web design and development services for businesses, focusing on creating
+                            visually appealing layouts for a positive first impression. </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 col-xl-3 mt-3" data-aos="fade-down">
+                    <div class="text-center">
+                        <img src="images/icon2.webp" width="80px" class=" bg-secondary p-2 rounded-circle border-1"
+                            alt="icon">
+                    </div>
+                    <div class="bg-primary px-4 py-5 text-center cardddd">
+                        <h4>Search Engine Optimization</h4>
+                        <p>Our SEO services aim to enhance your visibility, generate organic traffic, and surpass your
+                            competitors in search engine rankings. </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 col-xl-3 mt-3" data-aos="fade-up">
+                    <div class="text-center">
+                        <img src="images/icon3.webp" width="80px" class=" bg-secondary p-2 rounded-circle border-1"
+                            alt="icon">
+                    </div>
+                    <div class="bg-primary px-4 py-5 text-center cardddd">
+                        <h4>Digital Marketing</h4>
+                        <p>We offer services like SEO, Google, Facebook Ads to help businesses get online, including
+                            content creation, management, customer feedback. </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 col-xl-3 mt-3" data-aos="zoom-in-left">
+                    <div class="text-center">
+                        <img src="images/icon4.webp" width="80px" class=" bg-secondary p-2 rounded-circle border-1"
+                            alt="icon">
+                    </div>
+                    <div class="bg-primary px-4 py-5 text-center cardddd">
+                        <h4>Branding & Strategy</h4>
+                        <p>We will create a strong, unified brand and strategic plan that will set up your company for
+                            long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- row3 -->
+
+    <section>
+        <div class="container  py-5">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-6 my-3" data-aos="zoom-in-left">
+                    <img src="images/about1.png" width="100%" alt="about">
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 col-xl-6 abouttt my-3" data-aos="fade-down">
+                    <h5>About us</h5>
+                    <h2>We enhance your brand's visibility so your audience notices you!</h2>
+                    <p>We can help with everything from conventional PR and thought leadership initiatives to innovative
+                        social media management and storytelling. This isn’t your typical dealer that takes orders.
+                        Since they trust our experience, some of the largest agencies and brands in the world choose us
+                        as their partner.</p>
+                    <div class="progress my-3" role="progressbar" aria-label="SEO Analysis" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                        <div class="progress-bar" style="width: 85%;">
+                            <p class="text-black m-0 text-start px-2">SEO Analysis <span style="float:right;">85%</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="progress my-3" role="progressbar" aria-label="SEO Analysis" aria-valuenow="92"
+                        aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                        <div class="progress-bar" style="width: 92%;">
+                            <p class="text-black m-0 text-start px-2">SEO Audit <span style="float:right;">92%</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="progress my-3" role="progressbar" aria-label="SEO Analysis" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                        <div class="progress-bar w-100">
+                            <p class="text-black m-0 text-start px-2">Optimization <span
+                                    style="float:right;">100%</span></p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg mt-3">Let's Talk Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- row4 -->
+
+    <section class="mar">
+        <div class="row py-4 bg-primary ">
+            <marquee class="text-uppercase fw-bold" onmouseover="this.stop()" onmouseout="this.start()"
+                direction="right" scrollamount="15" behavior="scroll">Web Design &nbsp; &nbsp; social media &nbsp;
+                &nbsp; seo &nbsp; &nbsp; white label &nbsp; &nbsp; logo design &nbsp; &nbsp; print design &nbsp; &nbsp;
+                reputation &nbsp;&nbsp; audit &nbsp; &nbsp; branding &nbsp; &nbsp; strategy &nbsp; &nbsp; development
+                &nbsp; &nbsp; marketing</marquee>
+        </div>
+    </section>
+
+
+
+
+    <!-- row5 -->
+
+    <section class="s-back justify-content-center d-flex">
+        <div class="container m-0 m-lg-3">
+            <div class="row justify-content-center text-center">
+                <h5>Services</h5>
+                <h3 class="p-3" data-aos="fade-up">Services We will provide awesome services</h3>
+                <div class="col-12 col-md-6 col-lg-4 mb-4" style="position: relative;">
+                    <div class="card text-start">
+                        <div class="card-header bg-secondary"></div>
+                        <div class="card-body carddddddddd">
+                            <img class="bg-primary p-1 rounded" width="80px" src="images/web-development.png">
+                            <h5 class="card-title">Website Development</h5>
+                            <p class="card-text">As a dynamic web design studio, we synchronize your business strategy
+                                and digital concept seamlessly.</p>
+                            <a href="#" class="btn btn-primary" style="position: absolute; bottom: 10px;">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4" style="position: relative;">
+                    <div class="card text-start">
+                        <div class="card-header bg-secondary"></div>
+                        <div class="card-body carddddddddd">
+                            <img class="bg-primary p-1 rounded" width="80px" src="images/digital-marketing.png">
+                            <h5 class="card-title">Digital Marketing</h5>
+                            <p class="card-text">Do you want to optimize your website in a foreign language? Learn in
+                                which countries we will help you…</p>
+                            <a href="#" class="btn btn-primary" style="position: absolute; bottom: 10px;">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4" style="position: relative;">
+                    <div class="card text-start">
+                        <div class="card-header bg-secondary"></div>
+                        <div class="card-body carddddddddd">
+                            <img class="bg-primary p-1 rounded" width="80px" src="images/seo.png">
+                            <h5 class="card-title">Search Engine Optimization</h5>
+                            <p class="card-text">Boost your online presence with expert Search Engine Optimization
+                                services.</p>
+                            <a href="#" class="btn btn-primary" style="position: absolute; bottom: 10px;">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4" style="position: relative;">
+                    <div class="card text-start">
+                        <div class="card-header bg-secondary"></div>
+                        <div class="card-body carddddddddd">
+                            <img class="bg-primary p-1 rounded" width="80px" src="images/website-design.png">
+                            <h5 class="card-title">Website Design</h5>
+                            <p class="card-text">Our team offers web design and development services for businesses,
+                                focusing on creating visually appealing layouts for a positive first impression. </p>
+                            <a href="#" class="btn btn-primary" style="position: absolute; bottom: 10px;">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4" style="position: relative;">
+                    <div class="card text-start">
+                        <div class="card-header bg-secondary"></div>
+                        <div class="card-body carddddddddd">
+                            <img class="bg-primary p-1 rounded" width="80px" src="images/branding.png">
+                            <h5 class="card-title">Branding</h5>
+                            <p class="card-text">We will create a strong, unified brand and strategic plan that will set
+                                up your company for long-term success.</p>
+                            <a href="#" class="btn btn-primary" style="position: absolute; bottom: 10px;">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4" style="position: relative;">
+                    <div class="card text-start">
+                        <div class="card-header bg-secondary"></div>
+                        <div class="card-body carddddddddd">
+                            <img class="bg-primary p-1 rounded" width="80px" src="images/strategy.png">
+                            <h5 class="card-title">Strategy</h5>
+                            <p class="card-text">We will create a strong, unified brand and strategic plan that will set
+                                up your company for long-term success.</p>
+                            <a href="#" class="btn btn-primary" style="position: absolute; bottom: 10px;">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-left"><a href="#" class="btn btn-primary rounded-3 btn-lg">Get Started</a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- row6 -->
+
+    <section class="trans">
+        <div class="container py-5">
+            <div class="row text-white text-center off">
+                <h5 class="text-primary pt-5">Limited Time Offer</h5>
+                <h2 class="pb-5">Complete Branding Solution For You!</h2>
+                <div class="col-12 col-md-6 col-lg-4 text-start" data-aos="flip-left">
+                    <ul>
+                        <li class="ps-3">Unlimited Revisions</li>
+                        <li class="ps-3">Unlimited Original Logo Concepts</li>
+                        <li class="ps-3">Stationery</li>
+                        <li class="ps-3">500 Business Cards</li>
+                        <li class="ps-3">Email Signature Design</li>
+                        <li class="ps-3">2 Sided Flyer OR Bi-Fold Brochure Design</li>
+                        <li class="ps-3">Free Icon Design</li>
+                        <li class="ps-3">24 - 48 Hours Turn Around Time</li>
+                        <li class="ps-3">Unlimited Original Logo Concepts</li>
+                        <li class="ps-3">Money Back Guarantee</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 text-start" data-aos="flip-right">
+                    <ul>
+                        <li class="ps-3">8 Dedicated Logo Designer (Industry Specific)</li>
+                        <li class="ps-3">5 Page informative Website</li>
+                        <li class="ps-3">Brand Book</li>
+                        <li class="ps-3">500 Letterheads</li>
+                        <li class="ps-3">Social Media Designs </li>
+                        <li class="ps-3">With Grey Scale Format</li>
+                        <li class="ps-3">Formats: JPEG, PSD, EPS, AI, PNG, TIFF, SVG</li>
+                        <li class="ps-3">MORE FEATURES</li>
+                        <li class="ps-3">100% Ownership Rights</li>
+                        <li class="ps-3">Dedicated Account Manager</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 text-start" data-aos="zoom-in-left">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-7">
+                            <img src="images/guranted1.png" width="80%" alt="trust">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7">
+                            <img src="images/gurante2.png" width="80%" alt="trust">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 py-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in-right">
+                            <div class="box text-center p-3">
+                                <h3 class="text-primary">25K</h3>
+                                <p class="m-0">Project completed</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-down">
+                            <div class="box text-center p-3">
+                                <h3 class="text-primary">8K+</h3>
+                                <p class="m-0">Happy customers</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
+                            <div class="box text-center p-3">
+                                <h3 class="text-primary">15</h3>
+                                <p class="m-0">Years experiences</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in-left">
+                            <div class="box text-center p-3">
+                                <h3 class="text-primary">98</h3>
+                                <p class="m-0">Awards achievement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- row7 -->
+
+    <section class="acc-back justify-content-center d-flex">
+        <div class="container  m-0 m-lg-3">
+            <div class="row">
+                <div class="nav-wrapper col-12 col-lg-12" style="    padding-top: 50px; padding-bottom: 50px;">
+                    <ul class="nav nav-tabs" role="tablist" style="justify-content: center;">
+                        <li class="nav-item pb-2 mx-2" role="presentation">
+                            <button class="nav-link active navvvvv" id="all-tab" data-bs-toggle="tab"
+                                data-bs-target="#all" type="button" role="tab" aria-controls="all"
+                                aria-selected="true">Show All</button>
+                        </li>
+                        <li class="nav-item pb-2 mx-2" role="presentation">
+                            <button class="nav-link navvvvv" id="web-tab" data-bs-toggle="tab" data-bs-target="#web"
+                                type="button" role="tab" aria-controls="web" aria-selected="false">Web Design &
+                                Development</button>
+                        </li>
+                        <li class="nav-item pb-2 mx-2" role="presentation">
+                            <button class="nav-link navvvvv" id="seo-tab" data-bs-toggle="tab" data-bs-target="#seo"
+                                type="button" role="tab" aria-controls="seo" aria-selected="false"
+                                tabindex="-1">SEO</button>
+                        </li>
+                        <li class="nav-item pb-2 mx-2" role="presentation">
+                            <button class="nav-link navvvvv" id="digital-tab" data-bs-toggle="tab"
+                                data-bs-target="#digital" type="button" role="tab" aria-controls="digital"
+                                aria-selected="false" tabindex="-1">Digital Marketing</button>
+                        </li>
+                        <li class="nav-item pb-2 mx-2" role="presentation">
+                            <button class="nav-link navvvvv" id="branding-tab" data-bs-toggle="tab"
+                                data-bs-target="#branding" type="button" role="tab" aria-controls="branding"
+                                aria-selected="false" tabindex="-1">Branding & Strategy</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane active show" id="all" role="tab-panel" aria-labelledby="all-tab">
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project1.jpg" width="100%" alt="project"></a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project2.jpg" width="100%" alt="project"></a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project3.jpg" width="100%" alt="project"></a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project4.jpg" width="100%" alt="project"></a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project5.jpg" width="100%" alt="project"></a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project6.webp" width="100%" alt="project"></a>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane" id="web" role="tab-panel" aria-labelledby="all-tab">
+                        <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                            <a href="#"><img src="images/project1.jpg" width="100%" alt="project"></a>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                            <a href="#"><img src="images/project2.jpg" width="100%" alt="project"></a>
+                        </div>
+                        <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                            <a href="#"><img src="images/project3.jpg" width="100%" alt="project"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="seo" role="tab-panel" aria-labelledby="all-tab">
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project6.webp" width="100%" alt="project"></a>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="digital" role="tab-panel" aria-labelledby="all-tab">
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project1.jpg" width="100%" alt="project"></a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project2.jpg" width="100%" alt="project"></a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project3.jpg" width="100%" alt="project"></a>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="branding" role="tab-panel" aria-labelledby="all-tab">
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project4.jpg" width="100%" alt="project"></a>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-inline-flex">
+                        <a href="#"><img src="images/project5.jpg" width="100%" alt="project"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-grid justify-content-center py-5">
+                <a href="#" class="btn btn-primary rounded">View all</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- row8 have to do it -->
+
+    <section class="tes-bg">
+        <div class="container">
+            <div class="row justify-content-center text-center tes-sli">
+                <h5 class="text-primary pt-5" data-aos="zoom-in-right">Limited Time Offer</h5>
+                <h2 class="pb-5 text-white" data-aos="zoom-in-left">Complete Branding Solution For You!</h2>
+                <div class="col-12 col-md-8 col-lg-6" style="display: contents;">
+                    <main>
+                        <div class="slider">
+                            <div class="slide-row" id="slide-row">
+                              <div class="slide-col">
+                                    <div class="content">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi illo corrupti voluptate animi, cum non.</p>
+                                        <h2>Harper Bennet</h2>
+                                        <p>Business Owner</p>
+                                    </div>
+                                    <div class="hero d-none d-sm-block">
+                                        <img src="images/tes1.webp" alt="avatar">
+                                    </div>
+                                </div>
+                    
+                                <div class="slide-col">
+                                    <div class="content">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi illo corrupti voluptate animi, cum non.</p>
+                                        <h2>Caleb Adams</h2>
+                                        <p>Home Improvement Business Owner</p>
+                                    </div>
+                                    <div class="hero d-none d-sm-block">
+                                        <img src="images/22.jpg" alt="avatar">
+                                    </div>
+                                </div>
+                    
+                                <div class="slide-col">
+                                    <div class="content">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi illo corrupti voluptate animi, cum non.</p>
+                                        <h2>Carlos Abarca</h2>
+                                        <p>Startup Expert</p>
+                                    </div>
+                                    <div class="hero d-none d-sm-block">
+                                        <img src="images/testi-2.jpg" alt="avatar">
+                                    </div>
+                                </div>
+                              
+                
+                            </div>
+                        </div>
+                        
+                        <div class="indicator">
+                            <span class="btn btnn active"></span>
+                            <span class="btn btnn"></span>
+                            <span class="btn btnn"></span>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- row9 -->
+
+    <section>
+        <div class="container">
+            <div class="row d-grid justify-content-center py-5">
+                <a href="#" class="btn btn-white">Review us on <img src="images/trustpilot.png" width="87px"
+                        alt="trustpilot"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- row10-->
+
+    <section>
+        <div class="container py-5">
+            <div class="row text-center text-white row10">
+                <h5 class="text-primary">Workflow</h5>
+                <h2 class="pb-5">How We Process?</h2>
+                <div class="col-12 col-md-6 col-lg-3 num-bg my-3" data-aos="flip-left">
+                    <h4 class="bg-secondary">01</h4>
+                    <h3>Strategy</h3>
+                    <p>Market analysis, target audience, goal setting, campaigning.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 num-bg my-3" data-aos="flip-left">
+                    <h4 class="bg-primary">02</h4>
+                    <h3>Execution & Implementation</h3>
+                    <p>Website optimization, content creation, ad campaign launch.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 num-bg my-3" data-aos="flip-left">
+                    <h4 class="bg-secondary">03</h4>
+                    <h3>Optimize</h3>
+                    <p>Performance tracking, A/B testing, and campaign adjustments.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 num-bg my-3" data-aos="flip-left">
+                    <h4 class="bg-primary">04</h4>
+                    <h3>Reporting</h3>
+                    <p>Comprehensive reporting, insights & recommendations, and scalability planning. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- row11-->
+
+
+    <section class="">
+        <!-- for desktop -->
+        <div class="container sub-n d-none d-lg-block">
+            <div class="row justify-content-center text-center ">
+                <div class="col-12 col-lg-4">
+                    <input type="text" id="email" class="w-100 p-2 rounded-pill" placeholder="Your Email Address">
+                </div>
+                <div class="col-12 col-lg-2">
+                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Sign up</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- for Ipad -->
+        <div class="container d-none d-md-block d-lg-none sub-nn">
+            <div class="row justify-content-center text-center ">
+                <div class="col-12 col-md-5 col-lg-4">
+                    <input type="text" id="email" class="w-100 p-2 rounded-pill" placeholder="Your Email Address">
+                </div>
+                <div class="col-12 col-md-5 col-lg-2">
+                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Sign up</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- for mobile -->
+        <div class="container d-block d-md-none d-lg-none">
+            <div class="row justify-content-center text-center subnnnn">
+                <img src="images/person.png" alt="emailnow">
+                <h2 class="text-white text-start pt-3">Subscribe To Our Newsletter</h2>
+                <p class="text-white text-start">And Get the latest update of our company</p>
+                <div class="col-12 col-md-5 col-lg-4 py-3">
+                    <input type="text" id="email" class="w-100 p-2 rounded-pill" placeholder="Your Email Address">
+                </div>
+                <div class="col-12 col-md-5 col-lg-2">
+                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- row12 -->
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-white text-center bloggg">
+                <h5 class="text-primary" data-aos="zoom-in-right">Latest Blog</h5>
+                <h2 class="pb-5" data-aos="zoom-in-left">Learn more from out latest Blogs</h2>
+                <div class="col-12 col-lg-4 text-start my-3">
+                    <img src="images/blog1.webp" class="rounded-4" width="100%" alt="blog-img">
+                    <div class="bg-white text-black p-4  d-inline-block rounded-4 blogggg-box"
+                        style="position: relative;">
+                        <h6 class="text-primary">Web Design <span style="float: inline-end;"
+                                class="text-black">07-12-2024</span></h6>
+                        <h3>How to Create an Artificial Intelligence Website for Your Brand</h3>
+                        <a href="#" class="rounded-circle bg-primary px-2 py-1 anker" style="float:right;"><i
+                                class="bi bi-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 text-start my-3">
+                    <img src="images/blog3.jpg" class="rounded-4" width="100%" alt="blog-img">
+                    <div class="bg-white text-black p-4  d-inline-block rounded-4 blogggg-box"
+                        style="position: relative;">
+                        <h6 class="text-primary">Business <span style="float: inline-end;"
+                                class="text-black">07-12-2024</span></h6>
+                        <h3>How Amazon Books eBooks Are Changing the Way We Read</h3>
+                        <a href="#" class="rounded-circle bg-primary px-2 py-1 anker" style="float:right;"><i
+                                class="bi bi-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 text-start my-3">
+                    <img src="images/blog2.webp" class="rounded-4" width="100%" alt="blog-img">
+                    <div class="bg-white text-black p-4  d-inline-block rounded-4 blogggg-box"
+                        style="position: relative;">
+                        <h6 class="text-primary">Web Design <span style="float: inline-end;"
+                                class="text-black">07-12-2024</span></h6>
+                        <h3>What Makes an AI Website Stand Out? Key Features to Consider</h3>
+                        <a href="#" class="rounded-circle bg-primary px-2 py-1 anker" style="float:right;"><i
+                                class="bi bi-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="py-3"><a href="#" class="btn btn-primary rounded-3 btn-lg">View More</a></div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- additional row -->
+
+    <section>
+        <div class="container py-5">
+            <div class="row text-center text-white row10" style="align-items: center;">
+                <h5 class="text-primary">Global Brands</h5>
+                <h2 class="pb-5">We are pleased to collaborate with the biggest companies.</h2>
+                <div class="col-12 col-md-6 col-lg-3 my-3" data-aos="flip-left">
+                    <img src="images/com1.png" style="max-width: 100%;" alt="company">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 my-3" data-aos="flip-left">
+                    <img src="images/com2.png" style="max-width: 100%;" alt="company">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 my-3" data-aos="flip-left">
+                    <img src="images/com3.png" style="max-width: 100%;" alt="company">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 my-3" data-aos="flip-left">
+                    <img src="images/com4.png" style="max-width: 100%;" alt="company">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 my-3" data-aos="flip-left">
+                    <img src="images/com5.png" style="max-width: 100%;" alt="company">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 my-3" data-aos="flip-left">
+                    <img src="images/com6.png" style="max-width: 100%;" alt="company">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 my-3" data-aos="flip-left">
+                    <img src="images/com7.png" style="max-width: 100%;" alt="company">
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 my-3" style="padding: 40px;" data-aos="flip-left">
+                    <img src="images/com8.png" style="max-width: 100%;" alt="company">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- row13 -->
+
+
+    <section class="faq-bg py-5">
+        <div class="container">
+            <div class="row text-center text-white faq-hhh">
+                <h5 class="text-primary">Your Questions Our Answers</h5>
+                <h2 class="pb-5">FAQs: Your Roadmap To Understanding</h2>
+                <div class="col-12 col-lg-6 order-2 order-lg-1 my-3" data-aos="fade-right">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Lorem ipsum dolor sit amet.
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet.</strong>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sapiente fuga mollitia vitae, tempora vel corrupti cumque ducimus
+                                    quas provident illum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Lorem ipsum dolor sit amet.
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet.</strong>Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Ad tempore numquam alias dicta labore quaerat, provident itaque
+                                    obcaecati ipsa fugit?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Lorem ipsum dolor sit amet.
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Minus commodi expedita obcaecati exercitationem cum ducimus
+                                    officiis tempora sequi quo modi?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Lorem ipsum dolor sit amet.
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Minus commodi expedita obcaecati exercitationem cum ducimus
+                                    officiis tempora sequi quo modi?
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Lorem ipsum dolor sit amet.
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Minus commodi expedita obcaecati exercitationem cum ducimus
+                                    officiis tempora sequi quo modi?
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Lorem ipsum dolor sit amet.
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Minus commodi expedita obcaecati exercitationem cum ducimus
+                                    officiis tempora sequi quo modi?
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Lorem ipsum dolor sit amet.
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Minus commodi expedita obcaecati exercitationem cum ducimus
+                                    officiis tempora sequi quo modi?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2 my-3" data-aos="zoom-in-left">
+                    <img src="images/faq-img.png" width="80%" alt="faq-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- row14 -->
+
+    <section class="py-5 bg-black">
+        <div class="container">
+            <!-- for desktop -->
+            <div class="row d-none d-lg-flex">
+                <div class="col-12 col-lg-6 bg-white p-5 rounded-3 cont" data-aos="fade-down">
+                    <h5 class="text-primary">Work with us</h5>
+                    <h2>We Would Love To Hear More About Your Project</h2>
+                    <p>Need to get in touch with us? Fill out the form with your inquiry and let us know how Meta
+                        Techverse can work for you.</p>
+                    <input type="text" class="inppp my-2" placeholder="Name">
+                    <input type="email" class="inppp my-2" placeholder="Email">
+                    <textarea class=" inppp my-2" rows="4">Message</textarea>
+                    <a href="#" class="btn btn-primary rounded-pill" style="display: flow;">Submit Now</a>
+                </div>
+                <div class="col-12 col-lg-6" style="position: relative;" data-aos="flip-left">
+                    <img src="images/contact.webp" style="    position: absolute; left: -71px;" width="100%"
+                        alt="contact-img">
+                </div>
+            </div>
+
+            <!-- for mobile -->
+            <div class="row d-flex d-lg-none">
+                <div class="col-12 col-lg-6 bg-white p-3 rounded-3 cont order-2" data-aos="zoom-in-left">
+                    <h5 class="text-primary">Work with us</h5>
+                    <h2>We Would Love To Hear More About Your Project</h2>
+                    <p>Need to get in touch with us? Fill out the form with your inquiry and let us know how Meta
+                        Techverse can work for you.</p>
+                    <input type="text" class="inppp my-2" placeholder="Name">
+                    <input type="email" class="inppp my-2" placeholder="Email">
+                    <textarea class=" inppp my-2" rows="4">Message</textarea>
+                    <a href="#" class="btn btn-primary rounded-pill" style="display: flow;">Submit Now</a>
+                </div>
+                <div class="col-12 col-lg-6 order-1" data-aos="zoom-in-left">
+                    <img src="images/contact.webp" width="100%" alt="contact-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+
+    <section class="foot-bg py-5">
+        <div class="container">
+            <div class="row foot">
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <img src="images/foot-logo.png" width="100%" alt="logo">
+                    <p class="text-white py-3">We offer a strong enthusiasm for innovative solutions to each one of our
+                        clients, and we deliver on that promise.</p>
+                    <a href="#" class="bg-primary px-2 py-1 rounded-circle mx-1 text-white"><i
+                            class="bi bi-pinterest"></i></a>
+                    <a href="#" class="bg-primary px-2 py-1 rounded-circle mx-1 text-white"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="#" class="bg-primary px-2 py-1 rounded-circle mx-1 text-white"><i
+                            class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="bg-primary px-2 py-1 rounded-circle mx-1 text-white"><i
+                            class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <h4 class="text-white">Information</h4>
+                    <ul>
+                        <li class="pb-2"><a href="#">About Us</a></li>
+                        <li class="pb-2"><a href="#">Portfolio</a></li>
+                        <li class="pb-2"><a href="#">Our Team</a></li>
+                        <li class="pb-2"><a href="#">Blogs</a></li>
+                        <li class="pb-2"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <h4 class="text-white">Contact Us</h4>
+                    <ul>
+                        <li class="pb-2"><a href="#">117 Martin St, East Providence, RI, 02914, United States</a></li>
+                        <li class="pb-2"><a href="#">Portfolio</a></li>
+                        <li class="pb-2"><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 text-white mb-3">
+                    <h3>Have a project in your mind?</h3>
+                    <a href="#" class="btn btn-primary rounded-3">Contact Us</a>
+                </div>
+            </div>
+            <hr class="text-white">
+            <div class="row text-white">
+                <div class="col-12 col-md-6 col-lg-6 mb-3">
+                    <p>&copy; 2024 – 2025 | Alrights reserved by <a href="#" class="text-white">Metagen Verse</a></p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-end mb-3">
+                    <p>09 : 00 AM - 10 : 30 PM | <span>Saturday – Thursday</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init();
+   
+</script>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+
+</html>
